@@ -1,0 +1,320 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  font-weight: bold;
+  font-family: Poppins;
+}
+body {
+  margin: 0;
+  background-color: #;
+  font-size: 100%;
+  background-image: radial-gradient(blue, hsl(236.8,63%,12.9%));
+  color: white;
+  background-color: blue;
+}
+p {
+  line-height: 1.5;
+  word-spacing: 5px;
+}
+header {
+  background-color: hsl(236.8,63%,12.9%);
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.logo h1 {
+  display: inline-block;
+  float: left;
+  font-family: ;
+  padding: 0 5px;
+  margin: 0;
+  font-family: 'sofia';
+  background-image: linear-gradient(to right, skyblue, blue);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+@keyframes move {
+  50% {background-image: linear-gradient(to right, skyblue, blue); transform: rotateY(90deg);}
+  70% {background-image: linear-gradient(to right, blue, white); transform: rotateX(90deg);}
+  /*100% {background-image: linear-gradient(to right, blue, white); transform: rotateX(90deg); font-size: 40px;}*/
+}
+nav {
+  display: none;
+  float: right;
+  transition: 5s;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 2px;
+  padding: 0;
+  overflow: scroll;
+  border-radius: 15px 0 15px  0;
+  border: 1px solid black;
+  border-right: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  background-image: linear-gradient(to right, white, hsl(236.8,63%,12.9%));
+  background-color: white;
+  width: 200px;
+  
+}
+nav ul li a {
+  display: inline-block;
+  padding: 16px 14px;
+  text-decoration: none;
+  color: blue;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid white;
+}
+nav ul li a:visited::after {
+  content: "✔️";
+}
+h2 {
+  color: skyblue;
+}
+.hamburger {
+  cursor: pointer;
+  font-size: 26px;
+  padding: 5px;
+  float: right;
+  background-image: radial-gradient(#f1f1f1, blue);
+  border-radius: 10px;
+}
+.hamburger:hover {
+  background-color: ;
+  background-image: inherit;
+  transition: 5s;
+}
+.person {
+  margin-top: 20px;
+}
+article {
+  margin-top: 10px;
+}
+.intro-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+}
+.intro h2 {
+  margin: 0;
+}
+.intro h1 {
+  font-size: 35px;
+  color: blue;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  white-space: nowrap;
+  border-bottom: 2px solid yellow;
+}
+article img {
+  border-radius: 30px;
+  border: 1px solid blue;
+}
+article figure figcaption {
+  display: flex;
+  justify-content: space-around;
+}
+article figure figcaption .icon {
+  color: grey;
+  border: 2px solid grey;
+  border-radius: 100%;
+  padding: 5px;
+}
+.intro-text {
+  text-align: center;
+}
+article .person, .intro-text {
+  padding: 10px;
+  text-align: center;
+}
+.overflow {
+  height: 70px;
+  overflow: auto;
+  overflow-y: hidden;
+  display: flex;
+  width: 380px;
+  min-width: 200px;
+  max-width: 500px;
+  margin: auto;
+  /*background-color: blue;*/
+}
+.overflow img {
+  margin: auto 10px;
+  /*box-shadow: 5px 5px 5px #f3f3f3;*/
+}
+#wid {
+  padding: 10px;
+  margin-top: 100px;
+  background-color: #001f3f;
+  border-radius: 30px 30px 0 0;
+  border-top: 2px solid blue;
+}
+#wid h2 {
+  display: inline-block;
+}
+.abt {
+  border: 2px solid blue;
+  border-radius: 100%;
+  padding: 10px;
+}
+.abt-subhead, .abt-def {
+  margin-left: 20px;
+}
+.abt-def {
+  margin-left: 70px;
+}
+#about {
+  padding: 10px;
+  padding-top: 100px;
+  background-color: hsl(236.8,63%,12.9%);
+}
+#about h1 {
+  color: blue;
+}
+#about h3 {
+  color: yellow;
+}
+.skill-cont {
+  height: 70px;
+  width: 100%;
+  border: 2px solid blue;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  margin: 5px auto;
+}
+.skill-cont .skillicon{
+  font-size: 60px;
+  padding: 5px;
+  margin: 2px;
+}
+.skill-cont label {
+  font-size: 20px;
+}
+.bar {
+  width: 100%;
+}
+.skill-cont:hover {
+  background-image: linear-gradient(to bottom right, skyblue, blue);
+}
+.skill-cont progress {
+  height: 35px;
+  width: 100%;
+}
+#contact, #getintouch {
+  padding: 10px;
+}
+#contact a {
+  border-radius: 5px;
+  background-color: #f7f4f799;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+#contact a:hover {
+  background-color: #f7f4f7;
+}
+form {
+  text-align: center;
+}
+input {
+  height: 40px;
+  width: 300px;
+  max-width: 500px;
+  outline: none;
+  margin: 5px auto;
+  background-color: transparent;
+  border: 2px solid #001f3f;
+}
+form {
+  width: 350px;
+  margin: auto;
+}
+form a {
+  display: inline-block;
+  background-image: linear-gradient(to bottom right, blue, black);
+  color: white;
+  text-decoration: none;
+  padding: 14px 30px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+form a:hover {
+  border: 2px solid white;
+  padding: 15px 32px;
+}
+textarea {
+  width: 300px;
+  max-width: 500px;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid #001f3f;
+}
+input[placeholder="Your Name..."], input[placeholder="Email..."] {
+  color: #f1f1f1;
+  font-size: 1em;
+}
+footer {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  background-color: hsl(236.8,63%,12.9%);
+  color: white;
+}
+footer .icon {
+  padding: 3px 10px;
+  border-top: 1px solid white;
+}
+/*@media screen and (max-width: 600px) {
+  .intro {
+    width: 80%;
+    margin: auto;
+  }
+  figure {
+    width: 80%;
+    margin: auto;
+  }
+}*/
+@media screen and (min-width: 768px) {
+  /*nav {
+    display: block;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  nav ul li {
+    float: right;
+  }
+  nav ul li a {
+    display: inline-block;
+    padding: 16px 14px;
+    color: white;
+  }*/
+  .skills {
+    display: flex;
+  }
+}
