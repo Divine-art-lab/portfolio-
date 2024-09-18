@@ -8,6 +8,7 @@ html {
 }
 body {
   margin: 0;
+  padding: 0;
   background-color: #;
   font-size: 100%;
   background-image: radial-gradient(blue, hsl(236.8,63%,12.9%));
@@ -36,7 +37,7 @@ header {
   font-family: ;
   padding: 0 5px;
   margin: 0;
-  font-family: 'sofia';
+  font-family: 'Audiowide';
   background-image: linear-gradient(to right, skyblue, blue);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -134,7 +135,7 @@ article figure figcaption {
   justify-content: space-around;
 }
 article figure figcaption .icon {
-  color: grey;
+  color: white;
   border: 2px solid grey;
   border-radius: 100%;
   padding: 5px;
@@ -162,6 +163,7 @@ article .person, .intro-text {
   /*box-shadow: 5px 5px 5px #f3f3f3;*/
 }
 #wid {
+  width: 100%;
   padding: 10px;
   margin-top: 100px;
   background-color: #001f3f;
@@ -186,6 +188,7 @@ article .person, .intro-text {
   padding: 10px;
   padding-top: 100px;
   background-color: hsl(236.8,63%,12.9%);
+  width: 100%;
 }
 #about h1 {
   color: blue;
@@ -286,18 +289,45 @@ footer .icon {
   padding: 3px 10px;
   border-top: 1px solid white;
 }
-/*@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
+  .intro-head {
+    display: block;
+  }
   .intro {
-    width: 80%;
+    display: block;
+    width: auto;
+    padding-bottom: 5px;
     margin: auto;
   }
   figure {
-    width: 80%;
+    display: block;
+    width: 80vw;
     margin: auto;
   }
-}*/
+  figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18em;
+    height: 14em;
+  }
+  figure figcaption {
+    padding-top: 5px;
+    color: white;
+  }
+  figure figcaption .icon {
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5em;
+    color: white;
+    background-color: blue;
+    height: auto;
+    width: 2em;
+    
+  }
+}
 @media screen and (min-width: 768px) {
-  /*nav {
+  nav {
     display: block;
   }
   nav ul {
@@ -305,16 +335,24 @@ footer .icon {
     padding: 0;
     margin: 0;
     overflow: hidden;
+    background-color: transparent;
+    background-image: none;
+    width: auto;
+  }
+  .hamburger {
+    display: none;
   }
   nav ul li {
-    float: right;
+    float: left;
   }
   nav ul li a {
     display: inline-block;
     padding: 16px 14px;
     color: white;
-  }*/
+  }
   .skills {
     display: flex;
+    width: 100%;
+    overflow-x: scroll;
   }
 }
