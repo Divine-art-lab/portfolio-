@@ -9,7 +9,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #;
   font-size: 100%;
   background-image: radial-gradient(blue, hsl(236.8,63%,12.9%));
   color: white;
@@ -34,7 +33,6 @@ header {
 .logo h1 {
   display: inline-block;
   float: left;
-  font-family: ;
   padding: 0 5px;
   margin: 0;
   font-family: 'Audiowide';
@@ -84,7 +82,7 @@ nav ul li a {
 nav ul li a:hover {
   border-bottom: 2px solid white;
 }
-nav ul li a:visited::after {
+nav ul li a:hover::after {
   content: "✔️";
 }
 h2 {
@@ -100,7 +98,6 @@ h2 {
   transition: 10s;
 }
 .hamburger:hover {
-  background-color: ;
   background-image: inherit;
   transition: 5s;
 }
@@ -337,6 +334,35 @@ footer .icon {
     width: 2em;
     
   }
+}
+#projects {
+  background-color: black;
+}
+.project {
+  width: 300px;
+  border-radius: 10px;
+  border: 1px double blue;
+  margin: 5px auto;
+  text-align: center;
+  padding: 0;
+}
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+.project-content-buttons {
+  display: flex;
+}
+.project-content-buttons button {
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  background-color: blue;
+  font-weight: bold;
+  color: #000;
+}
+.project-content-buttons button:first-child {
+  border-radius: 2px solid blue;
 }
 @media screen and (min-width: 768px) {
   nav {
