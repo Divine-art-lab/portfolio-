@@ -4,7 +4,7 @@ html {
 * {
   box-sizing: border-box;
   font-weight: bold;
-  font-family: Poppins;
+  font-family: Poppins, cashdisplay;
 }
 body {
   margin: 0;
@@ -13,6 +13,10 @@ body {
   background-image: radial-gradient(blue, hsl(236.8,63%,12.9%));
   color: white;
   background-color: blue;
+}
+@font-face {
+  font-family: cashdisplay;
+  src: url('ClashDisplay-Regular.woff');
 }
 p {
   line-height: 1.5;
@@ -35,7 +39,7 @@ header {
   float: left;
   padding: 0 5px;
   margin: 0;
-  font-family: 'Audiowide';
+  font-family: Audiowide;
   background-image: linear-gradient(to right, skyblue, blue);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
