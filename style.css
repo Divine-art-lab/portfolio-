@@ -64,15 +64,14 @@ nav ul {
   margin: 2px;
   padding: 0;
   overflow: scroll;
-  border-radius: 15px 0 15px  0;
+  border-radius: 15px 0 0  15px;
   border: 1px solid black;
   border-right: none;
   position: absolute;
   right: 0;
   top: 0;
   z-index: -1;
-  background-image: linear-gradient(to right, white, hsl(236.8,63%,12.9%));
-  background-color: white;
+  background-color: #0A1053;
   width: 200px;
   transition: 35s ease-in-out;
   
@@ -81,7 +80,7 @@ nav ul li a {
   display: inline-block;
   padding: 16px 14px;
   text-decoration: none;
-  color: blue;
+  color: white;
 }
 nav ul li a:hover {
   border-bottom: 2px solid white;
@@ -396,5 +395,9 @@ footer .icon {
     display: flex;
     width: 100%;
     overflow-x: scroll;
+  }
+  .project {
+    display: flex;
+    justify-content: space-between;
   }
 }
