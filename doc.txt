@@ -1,0 +1,114 @@
+FormSubmit logo
+
+Easy form endpoints for your HTML forms
+Connect your form to our form endpoint and we’ll email you the submissions. No PHP, Javascript or any backend code required.
+
+EXAMPLE FORM / CONTACT FORM
+<form action="https://formsubmit.co/your@email.com" method="POST">
+     <input type="text" name="name" required>
+     <input type="email" name="email" required>
+     <button type="submit">Send</button>
+</form>
+
+Form backend platform for designers and developers.
+  Fake SMTP Server for Developers
+  Verify Email Addresses Online
+  Temp Mailbox for Email Testing
+  Find People Behind Any Company
+× Deliver Your Software Projects With a Trusted Partner
+Setup is easy and free.
+Design a form for your site, and be sure to name all the fields. Then, just point the action to us and confirm your email address!
+
+NO REGISTRATION REQUIRED
+1. CONNECT YOUR FORM
+Pointing the action-attribute of your form to our URL will enable submissions to be sent to your email address.
+
+<form action="https://formsubmit.co/your@email.com" method="POST" />
+
+2. ADD NAME ATTRIBUTES
+Include a name attribute in all form elements (i.e. <input>, <select>, and <textarea>) to receive the submission data.
+
+<input type="email" name="email">
+
+3. SEND AND CONFIRM
+Submit the form once. This first-time-use will trigger an email requesting confirmation.
+
+Do you want to give it a shot?
+You can play with our interactive playground. The HTML on the left is interactive, you can change the elements are included and the form to the right will be updated immediately. You can change your@email.com with your actual email address and then submit the form on the right to get the submission to your mailbox.
+
+Try It Now →
+STATS
+FormSubmit has processed over 2 million submissions from more than 300,000 registered websites.
+FormSubmit Advanced Features
+Form inputs can have specially named name-attributes, which alter functionality. They are all prefixed with an underscore.
+
+_replyto
+This value is used for the email's Reply-To field. This way you can directly "Reply" to the email to respond to the person who originally submitted the form.
+
+To activate this feature your form should request the user's email address.
+
+<input type="email" name="email" placeholder="Email Address">
+
+_next
+By default, after submitting a form the user is shown the FormSubmit "Thank You" page. You can provide an alternative URL for "Thank You" page.
+
+<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+
+_subject
+This value is used for the email's subject, so that you can quickly reply to submissions without having to edit the subject line each time.
+
+<input type="hidden" name="_subject" value="New submission!">
+
+_cc
+This value is used for the email's CC Field. This lets you send a copy of each submission to another email address.
+
+<input type="hidden" name="_cc" value="another@email.com">
+
+If you want to CC multiple email addresses, then just make it a list of email addresses separate by commas.
+
+<input type="hidden" name="_cc" value="another@email.com,yetanother@email.com">
+
+_blacklist
+Add this "blacklist" field along with a list of comma-separated phrases to filter out spam content from your submissions. Hence submissions that are containing given phrases will be completely disregarded while fooling spammers.
+
+<input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+
+* We recommend a maximum of 20 phrases as more can slow down the submission process.
+
+Disable reCAPTCHA _captcha
+Don't want your users to complete a reCAPTCHA? Each form now comes with the option to disable the reCAPTCHA, so you can maintain complete control over your form. You can even keep reCAPTCHA on a few forms that might be suceptible to spam, while disabling it on others.
+
+<input type="hidden" name="_captcha" value="false">
+
+* We highly recommend you use the reCAPTCHA (not to disable it) in order to avoid some technical limitations which we impose from time to time in order to filter out bots, spam, and other malicious programs.
+
+_autoresponse
+You can send an instant response to your users with a copy of the submission. Add a custom message to the email body.
+
+<input type="hidden" name="_autoresponse" value="your custom message">
+
+To activate this feature your form should request the user's email address.
+
+<input type="email" name="email" placeholder="Email Address">
+
+* autoresponse won't work with forms that are disabled reCAPTCHA and forms that are submitting through AJAX.
+
+_template
+You can select an email template from 3 different templates. By default, FormSubmit uses the basic template.
+
+<input type="hidden" name="_template" value="table">
+
+View all templates here →
+
+_webhook
+This feature allows you to configure a webhook that will be triggered each time a form receives a new submission. Webhooks can be used to manipulate data in real-time.
+
+<input type="hidden" name="_webhook" value="https://yourdomain.co/your-webhook">
+
+sample webhook response
+
+{ "form_data": { "name": "Devro LABS", "email": "hello@devrolabs.com", "message": "hello! there" } }
+
+Read more from Documentation →
+ Our Products Company Documentation API AJAX playground Help Support ✦ Services
+Copyright © 2025 Devro LABS | Privacy    

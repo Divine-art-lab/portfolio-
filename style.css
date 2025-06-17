@@ -167,8 +167,8 @@ header ul li.active {
 #About img {
   border-radius: 8px;
   border: 1px double var(--primary);
-  height: 50vh;
-  width: auto;
+  height: auto;
+  width: 50%;
   margin-inline: 16px;
 }
 #About article {
@@ -176,6 +176,7 @@ header ul li.active {
 }
 #services {
   margin-top: 32px;
+  color: var(--color);
 }
 #services [class*="service-"] {
   border-radius: 8px;
@@ -199,6 +200,9 @@ header ul li.active {
 #services [class*="service-"]:hover {
   border: 2px solid var(--primary);
   box-shadow: none;
+}
+#services [class*="service-"] p {
+  margin-left: 10px;
 }
 #services [class*="service-"]:hover .icon {
   background-color: var(--primary);
@@ -252,6 +256,16 @@ width: 90%;
   width: 90%;
   margin: 16px auto;
 }
+.project-img {
+  background-image: url("css_sprites.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.one {
+  background-position: -50% 0;
+  height: 150px;
+  width: 50px;
+}
 #contact {
   margin-top: 32px;
 }
@@ -260,6 +274,8 @@ form {
   background-color: #E0E0E0;
   margin: auto;
   padding: 8px;
+  font-size: 1rem;
+  border-radius: 4px;
 }
 form input, textarea {
   border-radius: 5px;
@@ -272,6 +288,9 @@ form input, textarea {
 }
 form input {
   height: 32px;
+}
+form .active:hover {
+  opacity: 0.5;
 }
 .float-btn {
   position: fixed;
@@ -314,10 +333,29 @@ ul.float-content {
 .float-btn .float-content li {
   padding: 0.2rem;
 }
+.notice-internet-con {
+  position: fixed;
+  bottom: 0;
+  border-radius: 4px;
+  width: 100%;
+  padding: 4px;
+  color: var(--color);
+  display: none;
+  animation: fade-in 0.5s 1;
+}
+@keyframes fade-in {
+  0% {
+    bottom: -100%;
+    left: -10%;
+  }
+  100% {
+    bottom: 0;
+    left: 0;
+  }
+}
 @media screen and (min-width: 450px) {
   header ul {
     flex-wrap: nowrap;
-    flex-direction: flex-start;
   }
   header ul li:last-child {
     margin-left: auto;

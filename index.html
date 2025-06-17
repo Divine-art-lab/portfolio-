@@ -148,7 +148,9 @@
     <section id="Projects">
       <h2>Projects</h2>
       <section class="projects-cont">
-        <img src="" alt="">
+        <div class="project-img one">
+          
+        </div>
         <h3>Christmas theme Design</h3>
         <p>
           A festive single-page website celebrating Christmas with a blend of elegant design, snow animations, and themed visuals. Created with HTML, CSS, and JavaScript to deliver a joyful seasonal experience.
@@ -157,7 +159,9 @@
         <button type="button">GitHub repo</button>
       </section>
       <section class="projects-cont">
-        <img src="" alt="">
+        <div class="project-img two">
+          
+        </div>
         <h3>Rock Paper Scissors Game</h3>
         <p>
           A fun, interactive browser game that brings the classic hand game to life with real-time logic, animations, and score tracking. Built to practice JavaScript decision-making and event handling.
@@ -166,7 +170,9 @@
         <button type="button">GitHub repo</button>
       </section>
       <section class="projects-cont">
-        <img src="" alt="">
+        <div class="project-img three">
+          
+        </div>
         <h3>Basic ToDo</h3>
         <p>
           simple and intuitive task management app built with clean UI and interactive functionality. Users can add, delete, and mark tasks as complete—perfect for everyday productivity.
@@ -186,11 +192,14 @@
   </section>
   
   <section id="Contact">
-    <form action="https://formsubmit.co/7b5f8c912a4105a37d77439027b479fd" method="POST">
+    <form action="https://formsubmit.co/7b5f8c912a4105a37d77439027b479fd" method="POST" autocomplete="on">
       <h1>Contact me, Let's connect.</h1>
-      <input type="email" name="email" id="" placeholder="Email">
-      <input type="text" name="Name" id="" placeholder="Name">
-      <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+      <input type="email" name="Email" id="" placeholder="Email" required>
+      <input type="text" name="Name" id="" placeholder="Name" required>
+      <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+      <input type="hidden" name="_autorespond" value="Thanks for messaging 😊, we will reply ASAP">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="http://localhost:7700/thankYou.html">
       <input class="active" type="submit" value="submit">
     </form>
 
@@ -199,12 +208,15 @@
 <section class="float-btn">
   <i class="fa fa-bars icon"></i>
   <ul class="float-content">
-    <li><a href="#"><i class="fa fa-arrow-up icon" o></i></a></li>
+    <li><a href="#"><i class="fa fa-arrow-up icon"></i></a></li>
     <li><a href="https://wa.me/2348184714817"><i class="fa fa-whatsapp icon"></i></a></li>
     <li><i class="fa fa-sun-o icon" onclick="toggleTheme()"></i></li>
   </ul>
 </section>
   
+  <div class="notice-internet-con">
+    
+  </div>
 <script src="script.js"></script>
 </body>
 
